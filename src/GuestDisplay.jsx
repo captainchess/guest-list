@@ -24,7 +24,7 @@ export default function GuestDisplay() {
         </ul>
       </section>
       <section>
-        <ExtraDetails />
+        <SelectedDetails />
       </section>
     </>
   );
