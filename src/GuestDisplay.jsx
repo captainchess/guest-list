@@ -1,8 +1,12 @@
 import GuestList from "./GuestList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getGuests } from "./getGuests";
+import ExtraDetails from "./ExtraDetails";
+
+useEffect();
 
 export default function GuestDisplay() {
-    const [ guests ] = useState(guestsData);
+  const [guests] = useState(guestsData);
   return (
     <>
       <section>
@@ -18,6 +22,9 @@ export default function GuestDisplay() {
             <GuestList />
           ))}
         </ul>
+      </section>
+      <section>
+        <ExtraDetails />
       </section>
     </>
   );

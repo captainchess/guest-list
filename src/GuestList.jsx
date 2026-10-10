@@ -1,3 +1,4 @@
+
 export default function GuestList({ guest }) {
     return (
         <div onClick={getDetails}>
