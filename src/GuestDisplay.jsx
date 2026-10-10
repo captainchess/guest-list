@@ -1,4 +1,4 @@
-import GuestList from "./GuestList";
+import Guest from "./Guest";
 import { useEffect, useState } from "react";
 import { getGuests } from "./getGuests";
 import ExtraDetails from "./ExtraDetails";
@@ -19,7 +19,7 @@ export default function GuestDisplay() {
       <section>
         <ul>
           {guests.map((guest) => (
-            <GuestList />
+            <Guest />
           ))}
         </ul>
       </section>

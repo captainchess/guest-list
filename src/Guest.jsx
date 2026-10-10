@@ -1,5 +1,5 @@
 
-export default function GuestList({ guest }) {
+export default function Guest({ guest }) {
     return (
         <div onClick={getDetails}>
             <li key={guest.id}>{guest.name}</li>
