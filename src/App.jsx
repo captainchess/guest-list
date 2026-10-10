@@ -1,3 +1,8 @@
+import GuestHeader from "./GuestHeader";
+
 export default function App() {
-  return <></>;
+  return <>
+    <GuestHeader />
+    <GuestDisplay />
+  </>;
 }
