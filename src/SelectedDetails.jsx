@@ -1,4 +1,4 @@
-export default function SelectedDetails({ job, bio }) {
+export default function SelectedDetails({ name, job, bio }) {
   if (!job) {
     return (
       <>
@@ -9,6 +9,10 @@ export default function SelectedDetails({ job, bio }) {
 
   return (
     <>
+      <div>
+        <h4>Name</h4>
+        <p>{name}</p>
+      </div>
       <div>
         <h4>Job</h4>
         <p>{job}</p>

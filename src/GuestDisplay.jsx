@@ -35,7 +35,7 @@ export default function GuestDisplay() {
         </ul>
       </section>
       <section>
-        <SelectedDetails job={guestDetails?.job} bio={guestDetails?.bio}/>
+        <SelectedDetails name={guestDetails?.name} job={guestDetails?.job} bio={guestDetails?.bio}/>
       </section>
     </>
   );
