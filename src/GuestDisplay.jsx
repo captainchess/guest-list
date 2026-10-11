@@ -21,14 +21,14 @@ export default function GuestDisplay() {
   return (
     <>
       <section>
-        <ul>
-          <li>Name</li>
-          <li>Email</li>
-          <li>Phone</li>
+        <ul className="ul-header">
+          <li className="column-header">Name</li>
+          <li className="column-header">Email</li>
+          <li className="column-header">Phone</li>
         </ul>
       </section>
       <section>
-        <ul>
+        <ul className="ul-guests">
           {guests.map((guest) => (
             <Guest key={guest.id} guest={guest} setGuestDetails={setGuestDetails} />
           ))}

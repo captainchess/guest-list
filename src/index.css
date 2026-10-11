@@ -1,9 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: solid .25px;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: grid;
+}
+
+header {
+  text-align: center;
 }
 
 li {
-    list-style: none;
+  list-style: none;
+}
+
+.ul-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column-header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.div-guests {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.div-guests:nth-child(odd) {
+    background-color: rgb(228, 228, 228);
+}
+
+.guest-details {
+  text-align: center;
+
+  
 }
