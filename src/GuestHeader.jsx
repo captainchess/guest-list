@@ -1,7 +1,7 @@
 export default function GuestHeader() {
     return(
         <div>
-            <header>Guest List</header>
+            <header><h1>Guest List</h1></header>
         </div>
     )
 }
