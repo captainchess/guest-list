@@ -30,7 +30,7 @@ export default function GuestDisplay() {
       <section>
         <ul className="ul-guests">
           {guests.map((guest) => (
-            <Guest key={guest.id} guest={guest} setGuestDetails={setGuestDetails} />
+            <Guest key={guest.id} guest={guest} guestDetails={guestDetails} setGuestDetails={setGuestDetails} />
           ))}
         </ul>
       </section>

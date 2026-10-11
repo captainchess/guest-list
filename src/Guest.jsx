@@ -1,7 +1,7 @@
-export default function Guest({ guest, setGuestDetails }) {
+export default function Guest({ guest, guestDetails, setGuestDetails }) {
   
   return (
-    <div className="div-guests" role="button" onClick={() => setGuestDetails(guest)}>
+    <div className={"div-guests" + (guestDetails ===guest ? " selected" : "")} role="button" onClick={() => setGuestDetails(guest)}>
       <li className="guest-details" key={guest.id}>
         <button className="list-button">{guest.name}</button>
       </li>
