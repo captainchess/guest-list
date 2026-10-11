@@ -25,6 +25,7 @@ section {
 
 header {
   text-align: center;
+  margin-bottom: 1ch;
 }
 
 li {
@@ -52,8 +53,7 @@ li {
 
 .guest-details {
   text-align: center;
-
-  
+  padding: 1ch;
 }
 
 .list-button {
@@ -61,4 +61,16 @@ li {
     border: 0;
     background: none;
     box-shadow: none;
+}
+
+.selected-section {
+    margin-top: 1ch;
+    
+    div {
+        margin: 1ch;
+
+        h4 {
+            text-decoration: underline;
+        }
+    }
 }

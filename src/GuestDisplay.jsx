@@ -34,7 +34,7 @@ export default function GuestDisplay() {
           ))}
         </ul>
       </section>
-      <section>
+      <section className="selected-section">
         <SelectedDetails name={guestDetails?.name} job={guestDetails?.job} bio={guestDetails?.bio}/>
       </section>
     </>
