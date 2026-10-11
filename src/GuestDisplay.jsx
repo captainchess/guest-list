@@ -1,12 +1,20 @@
 import Guest from "./Guest";
 import { useEffect, useState } from "react";
-import { getGuests } from "./getGuests";
+import { getGuests } from "./api";
 import ExtraDetails from "./ExtraDetails";
 
-useEffect();
-
 export default function GuestDisplay() {
-  const [guests] = useState(guestsData);
+  const [guests, setGuests] = useState(guestsData);
+
+  const syncGuests = async ()=>{
+    const data = await getGuests();
+    setGuests(data);
+  }
+
+  useEffect(() => {
+    syncGuests();
+  }, []);
+  
   return (
     <>
       <section>
