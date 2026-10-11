@@ -1,1 +1,1 @@
-export default function SelectedDetails() {}
+export default function SelectedDetails({ job, bio }) {}
