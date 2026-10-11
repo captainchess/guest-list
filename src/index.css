@@ -3,8 +3,24 @@
   padding: 0;
 }
 
+body {
+    display: grid;
+    justify-items: center;
+}
+
 #root {
   display: grid;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 60vw;
+  border-radius: 10px;
+  border: solid 2px;
+}
+
+section {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 header {
